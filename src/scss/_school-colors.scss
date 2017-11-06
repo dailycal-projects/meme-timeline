@@ -1,0 +1,33 @@
+$uc-berkeley: #FDB515;
+$university-of-pennsylvania: #990000;
+$stanford: #8c1515;
+$ucla: #3284bf;
+$yale: #00356b;
+$usc: #FFCC00;
+$brown: #663300;
+$dartmouth: #00693E;
+$harvard: #A41034;
+$boston-university: #CC0000;
+$northwestern: #4E2A84;
+$university-of-chicago: #800000;
+$george-washington-university: #C8B18B;
+$columbia: #174785;
+$princeton: #ff8f00;
+$cornell: #B31B1B;
+
+$schools: (uc-berkeley, $uc-berkeley),
+		  (university-of-pennsylvania, $university-of-pennsylvania),
+		  (stanford, $stanford),
+		  (ucla, $ucla),
+		  (yale, $yale),
+		  (usc, $usc),
+		  (brown, $brown),
+		  (dartmouth, $dartmouth),
+		  (harvard, $harvard),
+		  (boston-university, $boston-university),
+		  (northwestern, $northwestern),
+		  (university-of-chicago, $university-of-chicago),
+		  (george-washington-university, $george-washington-university),
+		  (columbia, $columbia),
+		  (princeton, $princeton),
+		  (cornell, $cornell);

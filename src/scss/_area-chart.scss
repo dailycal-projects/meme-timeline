@@ -1,0 +1,56 @@
+#area-chart {
+
+	.area {
+		fill: grey;
+		opacity: 0.1;
+		stroke: none;
+	}
+
+	.line {
+		fill: none;
+		stroke: #4d90bd;
+		stroke-width: 1.2px;
+		opacity: 0.7;
+	}
+
+	path.domain {
+		stroke: none;
+	}
+
+	@each $school, $color in $schools {
+	    .#{$school} {
+	    	&.line {
+	    		stroke: $color;
+	    	}
+	    	&.area {
+				fill: $color;
+			}
+	    }
+	}
+
+	.school-label {
+		font-family: $sans;
+		font-size: 12px;
+	}
+
+	.axis text, .axis-label {
+		fill: $medium-grey;
+		font-family: $sans;
+	}
+
+	.axis-label {
+		font-size: 12px;
+	}
+
+	line.axis {
+		stroke: $medium-grey;
+	}
+
+	.axis .tick line {
+		stroke: $medium-grey;
+	}
+
+	.grid .tick line {
+		stroke: $medium-grey;
+	}
+}

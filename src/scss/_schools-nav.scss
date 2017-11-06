@@ -1,0 +1,48 @@
+.schools-nav {
+	height: 60px;
+	background: #fff;
+	z-index: 100;
+	font-family: $sans;
+	font-size: 14px;
+	text-align: center;
+	padding: 15px 0 0 0;
+	position: sticky;
+	top: -5px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+
+	width: 100%;
+
+	@media (max-width: $width-small) {
+	    display: none;
+	}
+
+	ul {
+		padding: 0;
+	}
+
+	li {
+		display: inline-block;
+		padding: 0 15px;
+	}
+
+	a {
+		color: $medium-grey;
+	}
+
+	@each $school, $color in $schools {
+	    .#{$school}:hover, .#{$school}.active {
+	    	color: $color;
+	    	text-decoration: none;
+	    	cursor: pointer;
+	    	border-bottom: 1px solid $color;
+	    }
+    }
+}
+
+.schools-nav-placeholder {
+	height: 50px;
+
+	&.hidden {
+		display: none;
+	}
+}

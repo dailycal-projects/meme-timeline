@@ -1,0 +1,65 @@
+.school-timeline {
+	margin: 0 auto;
+
+	path.domain {
+		stroke: none;
+	}
+
+	.axis text, .axis-label {
+		fill: $medium-grey;
+		font-family: $sans;
+	}
+
+	.axis-label {
+		font-size: 12px;
+	}
+
+	line.axis {
+		stroke: $medium-grey;
+	}
+
+	.axis .tick line {
+		stroke: $medium-grey;
+	}
+
+	.grid .tick line {
+		stroke: $medium-grey;
+	}
+
+	.meme-line {
+		stroke: $dark-grey;
+		stroke-opacity: 0.3;
+		stroke-width: 5px;
+
+		&.active {
+			stroke-opacity: 1;
+		}
+	}
+
+	@each $school, $color in $schools {
+	    .#{$school} {
+			&.annotation-circle {
+				fill: $color;
+			}
+	    	&.meme-line.active {
+	    		stroke: $color;
+	    	}
+	    }
+	}
+
+	.rect {
+		fill: rgba(white, 0);
+		cursor: pointer;
+	}
+
+	.annotation-circle {
+		stroke: none;
+	}
+
+	.annotation-text {
+		font-family: $sans;
+		text-anchor: middle;
+		font-size: 12px;
+		fill: white;
+	}
+}

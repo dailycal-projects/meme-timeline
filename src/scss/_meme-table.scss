@@ -1,0 +1,50 @@
+.meme-table {
+	font-family: $sans;
+	font-size: 14px;
+	width: 100%;
+
+	.hidden-mobile {
+		@media (max-width: $width-small) {
+		    display: none;
+		}
+	}
+
+	a {
+		color: black;
+		text-decoration: none;
+	}
+
+	thead {
+		font-size: 0.9em;
+	}
+
+	td, th {
+		padding: 5px;
+		border-top: none !important;
+	}
+
+	thead {
+		border-bottom: 1px solid gray;
+		vertical-align: bottom;
+	}
+
+	.right {
+		text-align: right;
+		width: 15%;
+	}
+
+	.note {
+		color: $dark-grey;
+
+		a {
+			text-decoration: underline;
+		}
+	}
+
+	@each $school, $color in $schools {
+	    .#{$school} {
+	    	border-bottom: 1px solid $color;
+	    }
+    }
+
+}

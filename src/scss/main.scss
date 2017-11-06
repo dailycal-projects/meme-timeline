@@ -1,0 +1,43 @@
+@import 'bootstrap';
+
+@import 'breakpoints';
+@import 'mixins';
+@import 'colors/base';
+@import 'colors/diverging';
+@import 'colors/qualitative';
+@import 'colors/sequential';
+@import 'fonts';
+@import 'icons';
+
+@import 'elements';
+@import 'refer';
+@import 'navigation';
+@import 'header';
+@import 'footer';
+@import 'photos';
+@import 'buttons';
+@import 'ads';
+@import 'comments';
+@import 'share';
+@import 'credits';
+@import 'graphics';
+
+@import 'nerd-box';
+@import 'photo-half-half';
+
+@import 'school-colors';
+@import 'meme-table';
+//@import 'area-chart';
+@import 'school-gallery';
+@import 'school-timeline';
+@import 'schools-nav';
+
+.separator {
+	@media (max-width: $width-small) {
+	    margin: 0;
+	}
+}
+
+.video-wrapper {
+	text-align: center;
+}

@@ -1,0 +1,27 @@
+<div style="max-width: 980px; margin: 0 auto;">
+	<table class="meme-table table table-striped">
+	<thead>
+		<tr>
+			<th>School</th>
+			<th>Meme group*</th>
+			<th class="hidden-mobile right">Members (thousands)</th>
+			<th class="right">Members per student</th>
+		</tr>
+	</thead>
+	<tbody>
+	{% for row in DATA.schools %}
+		<tr class="meme-table--{{ row.slug }}">
+			<th>{{ row.school_full }}</th>
+			<td><a class="{{ row.slug }}" href="{{ row.url }}" target="_blank">{{ row.name }}</a></td>
+			<td class="hidden-mobile right">{{ (row.num_members/1000) | round(1) }}</td>
+			<td class="right">{{ row.members_per_student | round(1) }}</td>
+		</tr>
+	{% endfor %}
+	<tr>
+		<td class="note" colspan="4">*Groups sometimes change their names to reflect events at the school. For example, in reference to the Kenneth C. Griffin Charitable Fund's intended <a href="https://news.uchicago.edu/article/2017/11/01/uchicago-announces-125-million-gift-support-economic-scholarship">$125 million gift</a> to the University of Chicago economics department, UChicago Memes for Theoretical Midwest Teens changed its name to UChicago Memes for Kenneth C. Griffin Dept. of Economics Teens. This table shows the name by which each page is most commonly known.</td>
+	</tr>
+
+	</tbody>
+	</table>
+
+</div>

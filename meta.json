@@ -1,0 +1,25 @@
+{
+  "id": "42903220302",
+  "publishPath": "2017/meme-timeline/",
+  "url": "http://projects.dailycal.org/2017/meme-timeline/",
+  "timestamp": "2017-11-07T08:00-0800",
+  "dateline": "11/07/17 08:00 AM PST",
+  "share": {
+    "fbook": {
+      "card_title": "meme-timeline",
+      "card_description": "UC Berkeley's independent student-run newspaper"
+    },
+    "twitter": {
+      "card_title": "meme-timeline",
+      "share_tweet": "UC Berkeley's independent student-run newspaper"
+    },
+    "image": {
+      "url": "http://projects.dailycal.org/2017/meme-timeline/images/share.jpg",
+      "alt": "<Text>",
+      "type": "image/jpeg",
+      "width": "600",
+      "height": "300"
+    },
+    "keywords": "Daily Cal, news, memes"
+  }
+}

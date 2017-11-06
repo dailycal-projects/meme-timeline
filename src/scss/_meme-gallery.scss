@@ -1,0 +1,66 @@
+.dropdown-wrapper {
+	width: 100%;
+	margin-bottom: 10px;
+}
+.dropdown {
+	margin: 0 auto;
+	width: 300px;
+
+	.btn {
+		width: 300px;
+	}
+}
+
+.meme-gallery {
+	width: 980px;
+	margin: 0 auto;
+	//display: flex;
+	//flex-wrap: wrap;
+	font-size: 12px;
+
+	//flex-flow: column wrap;
+	//height: 9000px;
+}
+
+.meme-card {
+	width: 25%;
+	margin: 15px 3%;
+	//margin-right: 50px;
+	//margin-bottom: 30px;
+
+	padding: 10px;
+
+	h2, p {
+		font-family: $comicsans;
+	}
+
+	.credit {
+		font-size: 10px;
+		margin-top: 0;
+	}
+
+	.note {
+		font-family: $serif;
+		font-style: italic;
+	}
+
+	img {
+	 width: 100%;
+	}
+
+	.num-reactions {
+		margin-bottom: 0;
+	}
+
+	hr {
+		margin: 10px auto;
+		border-top: 1px solid black;
+	}
+}
+
+@each $school, $color in $schools {
+    .meme-card--#{$school} {
+    	background: rgba($color, 0.2);
+    	border-radius: 10px;
+    }
+}

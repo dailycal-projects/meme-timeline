@@ -1,0 +1,29 @@
+{%extends "base.html"%}
+
+{%block title%}
+<title>{{META.share.fbook.card_title}}</title>
+{%endblock%}
+
+{%block header%}
+
+<header class="center">
+    <p class="category">
+        <a href="{{ARCHIE.category_link}}"" target="_blank">{{ARCHIE.category}}</a>
+    </p>
+    <h1>{{ARCHIE.headline}}</h1>
+    <p class="subhead">{{ARCHIE.subhead}}</p>
+    <div class="info">
+        <p>
+            By <span class="byline"><a href="http://www.dailycal.org/author/schinoy/">Sahil Chinoy</a></span> and <span class="byline"><a href="http://www.dailycal.org/author/ejensen/">Ella Jensen</a></span> <br /> <span class="timestamp"> <time datetime="{{META.timestamp}}">{{ARCHIE.dateline | upper}}</time></span>
+        </p>
+    </div>
+</header>
+{%endblock%}
+
+{%block content%}
+
+{% for section in ARCHIE.sections %}
+    {% include '_sections/' + section.type +'.html' %}
+{% endfor %}
+
+{%endblock%}
