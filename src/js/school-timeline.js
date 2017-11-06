@@ -99,8 +99,10 @@ function drawSchoolTimeline(slug) {
       .attr('y1', chartHeight + 10)
       .attr('y2', chartHeight + 10)
 
+    const tickFormatter = (a) => d3.format('.2s')(a).replace('k', 'K');
+
     let yAxis = d3.axisLeft(y)
-        .tickFormat(d3.format('.2s'))
+        .tickFormat(tickFormatter)
         .ticks(3)
 
     chart.append("g")
