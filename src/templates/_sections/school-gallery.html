@@ -18,7 +18,7 @@
 				<p class="info"><span class="index {{ meme.school | slugify }}">{{ meme.index }}</span> <br />{{ meme.num_reactions|formatThousands }} reactions <span class="date">{{ meme.date | formatDate }}</span></p>
 				<div class="meme">
 					<p class="message">{{ meme.message }}</p>
-					<a target="_blank" href="{{ meme.permalink_url }}"><img src="images/{{ meme.post_id }}.jpg"></a>
+					<div class="img-wrapper"><a target="_blank" href="{{ meme.permalink_url }}"><img src="images/{{ meme.post_id }}.jpg"></a></div>
 					<p class="credit">Credit: {{ meme.from_name }}</p>
 				</div>
 				{% if meme.note %}

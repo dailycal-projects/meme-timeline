@@ -7,12 +7,12 @@
 	@media (max-width: $width-small) {
 	    top: 0;
 	}
-	
 }
 
 .school-header {
 	@media (max-width: $width-small) {
-	    font-size: 18px;
+	    font-size: 16px;
+	    margin-bottom: 20px;
 	}
 
 	font-family: $sans;
@@ -64,6 +64,11 @@
 
 	img {
 		width: 100%;
+		max-width: 300px;
+	}
+
+	.img-wrapper {
+		text-align: center;
 	}
 
 	.index {

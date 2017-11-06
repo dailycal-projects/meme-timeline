@@ -12,7 +12,7 @@
 
 	width: 100%;
 
-	@media (max-width: $width-small) {
+	@media (max-width: $width-medium) {
 	    display: none;
 	}
 
@@ -22,7 +22,11 @@
 
 	li {
 		display: inline-block;
-		padding: 0 15px;
+		padding: 0 20px;
+
+		@media (max-width: $width-large) {
+			padding: 0 10px;
+		}
 	}
 
 	a {
