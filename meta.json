@@ -7,19 +7,20 @@
   "share": {
     "fbook": {
       "card_title": "meme-timeline",
-      "card_description": "UC Berkeley's independent student-run newspaper"
+      "card_description": "Explore the dramatic rise of college meme groups."
     },
     "twitter": {
       "card_title": "meme-timeline",
-      "share_tweet": "UC Berkeley's independent student-run newspaper"
+      "card_description": "Explore the dramatic rise of college meme groups.",
+      "share_tweet": "Explore the dramatic rise of college meme groups"
     },
     "image": {
-      "url": "http://projects.dailycal.org/2017/meme-timeline/images/share.jpg",
+      "url": "http://stage-projects.dailycal.org/2017/meme-timeline/images/share.jpg",
       "alt": "<Text>",
       "type": "image/jpeg",
-      "width": "600",
-      "height": "300"
+      "width": "2600",
+      "height": "1630"
     },
-    "keywords": "Daily Cal, news, memes"
+    "keywords": "Daily Cal, news, memes, UC Berkeley Memes for Edgy Teens, Martin Shkreli"
   }
 }
