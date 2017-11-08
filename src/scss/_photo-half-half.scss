@@ -7,9 +7,10 @@
 		font-family: $sans;
 		color: #999;
 		font-size: 12px;
+		margin-top: 5px;
 		margin-bottom: 5px;
 		text-align: left;
-		max-width: 800px;
+		max-width: 400px;
 	}
 
 	img {
@@ -19,8 +20,14 @@
 	}
 
 	.col-sm-6 {
-		@media (max-width: $width-small) {
-		    margin-bottom: 30px;
+		@media (max-width: $width-medium) {
+			padding: 0	
+		}
+
+		&:first-of-type {
+			@media (max-width: $width-medium) {
+				margin-bottom: 30px;
+			}
 		}
 	}
 }
