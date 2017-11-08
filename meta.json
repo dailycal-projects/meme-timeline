@@ -2,25 +2,25 @@
   "id": "42903220302",
   "publishPath": "2017/meme-timeline/",
   "url": "http://projects.dailycal.org/2017/meme-timeline/",
-  "timestamp": "2017-11-07T08:00-0800",
-  "dateline": "11/07/17 08:00 AM PST",
+  "timestamp": "2017-11-08T08:00-0800",
+  "dateline": "11/08/17 08:00 AM PST",
   "share": {
     "fbook": {
-      "card_title": "meme-timeline",
+      "card_title": "The Rise of the Campus Meme",
       "card_description": "Explore the dramatic rise of college meme groups"
     },
     "twitter": {
-      "card_title": "meme-timeline",
+      "card_title": "The Rise of the Campus Meme",
       "card_description": "Explore the dramatic rise of college meme groups",
       "share_tweet": "Explore the dramatic rise of college meme groups"
     },
     "image": {
       "url": "http://stage-projects.dailycal.org/2017/meme-timeline/images/share.jpg",
-      "alt": "<Text>",
+      "alt": "The Rise of the Campus Meme",
       "type": "image/jpeg",
       "width": "2600",
       "height": "1630"
     },
-    "keywords": "Daily Cal, news, memes, UC Berkeley Memes for Edgy Teens, Martin Shkreli"
+    "keywords": "Daily Cal, news, memes, UC Berkeley Memes for Edgy Teens, Martin Shkreli, Ann Coulter, free speech"
   }
 }

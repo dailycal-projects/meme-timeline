@@ -63,6 +63,9 @@ env.addFilter('formatThousands', (num, kwargs) => {
   return d3.format('.2s')(num);
 });
 
+env.addFilter('formatOneDecimal', (num, kwargs) => {
+  return d3.format(".1f")(num);
+});
 
 app.use(express.static('src'))
 

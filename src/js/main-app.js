@@ -4,6 +4,9 @@ require('../scss/main.scss');
 //require('./area-chart.js');
 const drawSchoolTimeline = require('./school-timeline.js');
 
+var target = window.location.hash,
+    target = target.replace('#', '');
+
 $(window).on('scroll', () => {
   let positions = [];
   const schoolsTop = $('.schools').position().top;

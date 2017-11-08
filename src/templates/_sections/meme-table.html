@@ -13,8 +13,8 @@
 		<tr class="meme-table--{{ row.slug }}">
 			<th>{{ row.school_full }}</th>
 			<td><a class="{{ row.slug }}" href="{{ row.url }}" target="_blank">{{ row.name }}</a></td>
-			<td class="hidden-mobile right">{{ (row.num_members/1000) | round(1) }}</td>
-			<td class="right">{{ row.members_per_student | round(1) }}</td>
+			<td class="hidden-mobile right">{{ (row.num_members/1000) | formatOneDecimal }}</td>
+			<td class="right">{{ row.members_per_student | formatOneDecimal }}</td>
 		</tr>
 	{% endfor %}
 	<tr>
